@@ -204,15 +204,13 @@ main > section{
 }
 .footer{
     background-color: rgba(255, 244, 231, 1);
-    justify-items: center;
-    max-width: 1440;
+    justify-content: center;
+    max-width: 1440px;
     margin: 130px 239px;
     height: 100px;
-
-}
-.footer-description{
     padding-top: 38px;
     align-items: center;
+
 }
 
 /* responsive media query  */
@@ -220,7 +218,8 @@ main > section{
     .navbar,
     .nav-link,
     .features,
-    .teams{
+    .teams,
+    .footer{
         flex-direction: column;
     } 
 
@@ -250,7 +249,7 @@ main > section{
 
 /* medium size device */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    .teams, .features{
+    .teams, .features, .footer{
         flex-direction: column;
     }
     .our-features{
@@ -265,5 +264,8 @@ main > section{
     #experience-badge{
         margin-top: 20px;
         margin-bottom: 20px;
+    }
+    .footer{
+        max-width: 1440px;
     }
 }
